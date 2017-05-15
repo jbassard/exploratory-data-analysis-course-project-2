@@ -38,7 +38,7 @@ EmmissionsType$Pollutant_Type <- EmmissionsType$type
 png("./plot3.png")
 
 ##Plotting
-qplot(year, Emissions, data = EmmissionsType,  group = Pollutant_Type, color = Pollutant_Type, geom = c("point", "line"), ylab = "Total PM2.5 Emissions (ton)", xlab = "Year", main = "Total PM2.5 Emissions in Baltimore per type of pollutant")
+qplot(year, Emissions, data = EmmissionsType,  group = Pollutant_Type, color = Pollutant_Type, geom = c("point", "line"), ylab = "Total PM2.5 Emissions (ton)", xlab = "Year", main = "Total PM2.5 Emissions in Baltimore per pollutant source type")
 
 ##Closing png function
 dev.off()
