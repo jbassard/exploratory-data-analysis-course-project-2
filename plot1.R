@@ -11,9 +11,6 @@ if(!file.exists(".EDAassignement2/dataset")) {
 wd <- getwd() ## store current directory path for reset it at the end of the script
 setwd("./EDAassignement2/dataset")
 
-##Store file path
-path_data <- file.path("./EDAassignement2/dataset")
-
 ##Then read and store the various files used for the assignement
 NEI <- readRDS("summarySCC_PM25.rds")
 SCC <- readRDS("Source_Classification_Code.rds")
